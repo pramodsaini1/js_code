@@ -14,6 +14,6 @@ console.table([accountId,accountEmail,accountPassword,accountCity])
 
 /*
 prefer not use the var
-bacause scope matter
+bacause issues of block scope and functional scope
 
 */
