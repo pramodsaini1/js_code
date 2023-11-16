@@ -34,3 +34,33 @@ const myFunction=function(){
 
 
 
+
+
+//memory------------stack(primitive)       and heap(non-primitive)
+
+let name="pramo";
+let anotherName= name
+
+anotherName="prmaod saini"
+ 
+
+console.log(anotherName);
+console.log(name);
+
+
+let userOne={
+        email:"user@gmail.com",
+        upi:"user@ybl"
+}
+
+let userTwo=userOne
+
+userTwo.email="pramod@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
+
