@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+     <script>
+        // document.getElementById('owl').onclick=function(){
+        //     alert("owl Clicked");
+        // }
+
+      //   document.getElementById('owl').addEventListener('click',function(e){
+      //      console.log(e);
+      //   },false)
+
+      //   //attachedEvent()
+      //   //jquery-on
+
+      // //type,timestamp,defaultPreventd
+      // //target,toElement,srcElement,currentTarget
+      // //clientx,clienty,screenx,screeny
+      // //altkey,ctrlkey,keycode
+
+      // document.getElementById('images').addEventListener('click',function(e){
+      //      console.log("clicked inside the ul");
+      //   }, true)
+
+      //   document.getElementById('owl').addEventListener('click',function(e){
+      //      console.log("owl clicked");
+      //      e.stopPropagation()
+      //   }, true)
+
+
+      //   document.getElementById('google').addEventListener('click',function(e){
+      //       console.log("google clicked");
+      //         e.defaultPrevented()
+      //         e.stopPropagation()
+      //   },false);
+
+        
+         document.querySelector('#images').addEventListener('click',function(e){
+             console.log(e.target.tagName);
+             if (e.target.tagName=='IMG') {
+               let removeit=e.target.parentNode
+               removeit.remove()
+             }
+              
+           // removeit.parentNode.removeChild(removeit)
+
+         },false)
+
+
+
+     </script>
+</body>
+</html>
