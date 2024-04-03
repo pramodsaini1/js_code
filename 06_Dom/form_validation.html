@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM Form Validation</title>
+</head>
+<body>
+   <input id="demo">
+   <button type="button" onclick="myFunction()">submit</button> 
+   <p id="show"></p>
+   <script>
+       function myFunction(){
+     let x=document.getElementById("demo").value;
+      let text="";
+      if(isNaN(x) ||x<1 ||x>10){
+         text="is not valid";
+      }
+      else{
+         text="input ok";
+      }
+      document.getElementById("show").innerHTML=text;
+       }
+   </script>
+</body>
+</html>
